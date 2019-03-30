@@ -1,0 +1,73 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+/*.grid_container_main{
+	width: 100vw;
+	height: 100vw;
+	display: grid;
+	background: grey;
+}
+
+
+.intro{
+	width: 100vw;
+	height: 40rem;
+	background-image: url(images/mobile_pop_out.png);
+	background-size: cover;
+	background-position: center;
+}
+*/
+
+.header-wrapper{
+	width: 66vw;
+	display: grid;
+	margin: auto;
+	grid-template-columns: auto 1fr 1fr 1fr 0.5fr;
+	grid-template-rows: auto 1fr 1fr auto auto;
+	grid-gap: 1rem;
+	transform: rotate(-45deg);
+	background: coral;
+}
+
+h1{
+	font-size: 2em;
+	margin: 0;
+	line-height: 1.2em;
+}
+
+h1:nth-child(1){
+	grid-column: 1/4;
+	text-align: right;
+}
+
+h1:nth-child(2){
+	grid-column: 3/4;
+	grid-row: 2/5;
+	color: dodgerblue;
+	writing-mode: vertical-rl;
+    justify-self: end;
+    margin-top: -10px;
+    margin-right: -10px;
+}
+
+.bold-line{
+	grid-column: 3/6;
+	grid-row: 5;
+	border-bottom: 25px solid plum;
+	align-self: start;
+	justify-content: end;
+}
+
+.more-examples{
+	font-weight: 700;
+	grid-row: 3;
+	grid-column: 4/6;
+	align-self: end;
+}
+
