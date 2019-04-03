@@ -38,7 +38,7 @@ header{
 	grid-template-rows: auto 1fr 1fr auto auto;
 	grid-gap: 1rem;
 	transform: rotate(-45deg);
-	background-image: url(images/mobile_pop_out.png);
+	background-image: url(images/whale1.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
