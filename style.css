@@ -101,8 +101,37 @@ h1{
     height: 30rem;
     background: teal;
     margin: 6rem 2rem;
+    overflow: hidden;
 }
 
+.frame{
+   /* display: inline-block;*/
+    height: 0;
+    padding-bottom: 50%;
+    width: 50%;
+    float: right;
+     background: 
+    repeating-radial-gradient(
+      circle at 0 0, 
+      #eee,
+      #ccc 50px
+    );
+    border-radius: 50%;
+
+}
+
+.frame img{
+    width: 70%;
+}
+
+.website_pic{
+
+    height: 17rem;
+    background-image: url(images/nycares.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 
 
