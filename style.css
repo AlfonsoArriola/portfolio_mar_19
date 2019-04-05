@@ -7,23 +7,6 @@ body{
 	box-sizing: border-box;
 }
 
-/*.grid_container_main{
-	width: 100vw;
-	height: 100vw;
-	display: grid;
-	background: grey;
-}
-
-
-.intro{
-	width: 100vw;
-	height: 40rem;
-	background-image: url(images/mobile_pop_out.png);
-	background-size: cover;
-	background-position: center;
-}
-*/
-
 header{
 	padding-top: 2rem;
     min-height: 100vh;
@@ -43,8 +26,6 @@ header{
 	background-repeat: no-repeat;
 	background-position: center;
 }
-
-
 
 h1{
 	font-size: calc(5vw + 1rem);
@@ -93,15 +74,30 @@ h1{
 /*_________   Header Ends/ Main Section Begings   ____________________*/
 
 .main_section{
-    background: hotpink;
+    /*background: hotpink;*/
     width: 100%;
 }
 
 .project{
     height: 30rem;
-    background: teal;
+    /*background: teal;*/
     margin: 6rem 2rem;
     overflow: hidden;
+    display: flex;
+}
+
+.project_l {
+    margin: 0 3rem;
+}
+
+.project_l h3{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    display: inline-block;
+}
+
+.project_r{
+    width: 100%;
 }
 
 .frame{
@@ -111,10 +107,12 @@ h1{
     width: 50%;
     float: right;
      background: 
-    repeating-radial-gradient(
-      circle at 0 0, 
-      #eee,
-      #ccc 50px
+    repeating-linear-gradient(
+      45deg,
+      teal,
+      teal 10px,
+      coral 10px,
+      coral 20px
     );
     border-radius: 50%;
 
@@ -122,21 +120,40 @@ h1{
 
 .frame img{
     width: 70%;
+    box-shadow: 3px 3px black;
 }
 
-.website_pic{
-
-    height: 17rem;
-    background-image: url(images/nycares.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.closing {
+    height: 40rem;
+    width: 100%;
+    text-align: center;
+    font-size: 4em;
 }
 
+.closing h2{
+    transform: rotate(-45deg);
+    letter-spacing: 25px;
+    width: 50rem;
+    opacity: 0.5;
+}
 
+.the{
+    color: crimson;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    letter-spacing: -2px;
+}
 
+.bronx{
+}
 
-
+.ny{
+    color: brown;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+   /* margin-top: -35px;*/
+    letter-spacing: -5px;
+}
 
 /*++++++++++  Media Queries     +++++++++++++++++++*/
 
