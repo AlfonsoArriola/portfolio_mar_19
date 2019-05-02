@@ -181,13 +181,20 @@ h1{
     height: 18rem;
     width: 100vw;
     background: pink;
+    background-image: url(images/fc_page.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
 }
 
 .bkgd_vid{
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
+    width: 50%;
+}
+
+.vid_overlay{
+    font-size: 20px;
+    color: red;
 }
 
 
